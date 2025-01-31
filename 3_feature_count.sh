@@ -14,7 +14,7 @@ LOGDIR="$WORKDIR/log"                                                  # Log dir
 OUTDIR="$WORKDIR/counts"                                         # Output directory
 ANNOTATIONFILE="$WORKDIR/processed_data/reference_genome/Mus_musculus.GRCm39.113.gtf"               # Annotation file
 MAPPINGDIR="$WORKDIR/mapping"                                      # Mapping directory
-SAMPLELIST="$WORKDIR/samples/toxoplasma_de/reads/sample_list.txt"  # Sample list
+SAMPLELIST="$WORKDIR/samples/sample_list.txt"  # Sample list
 
 
 #Create the directory for the error and output file if not present
