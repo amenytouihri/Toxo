@@ -62,6 +62,27 @@ A script called `0A_getsamplelist` is designed to organize and generate a file c
 * `2G_samtools_index` : Index the BAM files
 * `2H_samtools_flagstat` : Generate supplementary alignment statistics from the BAM files
 
+The alignment rate per sample are shown in the following table: 
+
+|     Sample   Name        |     % Assigned    |     M Assigned    |
+|--------------------------|-------------------|-------------------|
+|     SRR7821970sorted     |     55.3%         |     17.0          |
+|     SRR7821969sorted     |     58.8%         |     13.1          |
+|     SRR7821968sorted     |     55.0%         |     20.4          |
+|     SRR7821953sorted     |     66.0%         |     16.2          |
+|     SRR7821952sorted     |     66.6%         |     17.6          |
+|     SRR7821951sorted     |     66.0%         |     25.1          |
+|     SRR7821950sorted     |     66.7%         |     17.1          |
+|     SRR7821949sorted     |     65.9%         |     22.5          |
+|     SRR7821939sorted     |     72.1%         |     37.8          |
+|     SRR7821938_sorted    |     78.2%         |     34.9          |
+|     SRR7821937sorted     |     72.5%         |     36.4          |
+|     SRR7821922sorted     |     71.1%         |     30.3          |
+|     SRR7821921sorted     |     71.7%         |     32.7          |
+|     SRR7821920sorted     |     64.0%         |     29.7          |
+|     SRR7821919sorted     |     71.9%         |     29.3          |
+|     SRR7821918sorted     |     73.0%         |     29.7          |
+
 ### 4. Count the number of reads 
 
 The script `3_featurecount` uses FeatureCounts to generate a table of counts containing the number of reads per gene in each sample and a summary file.
@@ -73,4 +94,6 @@ The file containing the names of all samples and their corresponding group gener
 * `4B_DE_preprocessing.R` : Processes the count table data, prepares the sample metadata, performs the Differential expression analysis using DEseq2 and saves the result as an RDS file.
 * `4C_DE_PCA.R` : Performs a Principal component analysis on the result of the Differential expression analysis and generates the corresponding graph.
 * `4D_DE_pairwise_comparaison.R` : Performs pairwise differential expression analyses and Gene Ontology enrichment analysis, generates visualizations  and saves the results in Excel files and barplots as PNG files for further interpretation.
+
+
 
